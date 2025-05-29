@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace, sans-serif, serif;
+}
+
+body {
+    background: url(desk.png);
+    background-size: 100%;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    padding: 2.5em;
+    text-align: left;
+    font-size: 100%;
+}
+
+h2 {
+    padding-top: 2em;
+    font-size: 100%;
+}
+
+h3 {
+    padding: 1.5em;
+    font-size: 80%;
+}
+
+h4 {
+    padding: 1em;
+    font-size: 100%;
+    text-align: left;
+}
+
+h5 {
+    padding: 1.5em;
+    font-size: 70%;
+    font-weight: 400;
+    text-align: left;
+}
+
+h6 {
+    text-align: left;
+    padding: 2.5em;
+    font-size: 100%;
+}
+
+#meldingP {
+    padding-top: 1.5em;
+    font-size: 70%;
+}
+
+#sec {
+    font-size: 70%;
+    font-weight: 500;
+}
+
+#pagina1 p {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 80%;
+    font-weight: 500;
+}
+
+#leeftijdInput {
+    font-size: 70%;
+}
+
+#start {
+    font-size: 70%;
+    font-weight: 600;
+}
+
+.lamp {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    height: 7em;
+    padding-left: 2em;
+}
+
+section {
+    text-align: center;
+    font-size: 2em;
+}
+
+input {
+    font-size: 1em;
+}
+
+button {
+    font-size: 50%;
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: black;
+    color: white;
+}
+
+.troep {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 9em;
+}
+
+@keyframes swing {
+    20% { 
+        transform: rotate(15deg); 
+    }
+    40% { 
+        transform: rotate(-10deg); 
+    }
+    60% { 
+        transform: rotate(5deg); 
+    }
+    100% { 
+        transform: rotate(0deg); 
+    }
+}
+
+#toby {
+    animation: swing 2s infinite forwards;
+}
+
+@keyframes rotate {
+    from { 
+        transform: rotate(0deg); 
+    }
+    to { 
+        transform: rotate(360deg); 
+    }
+}
+
+#beker {
+    animation: rotate 2s infinite forwards;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { 
+        transform: translateY(0); 
+    }
+    40% { 
+        transform: translateY(-30px); 
+    }
+    60% { 
+        transform: translateY(-15px); 
+    }
+}
+
+#jello {
+    animation: bounce 2s infinite forwards;
+}
+
+@keyframes shake {
+    0% { 
+        transform: translate(15px, 0); 
+    }
+    25% { 
+        transform: translate(-15px, 0); 
+    }
+    50% { 
+        transform: translate(15px, 0); 
+    }
+    75% { 
+        transform: translate(-15px, 0); 
+    }
+    100% { 
+        transform: translate(0, 0); 
+    }
+}
+
+#tanden {
+    animation: shake 2s infinite forwards;
+}
+
+.troep img {
+    width: 10%;
+}
+
+#pagina2 {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 100px;
+}
+
+#michael1 {
+    width: 20%;
+}
+
+#michael2 {
+    display: none;
+    position: absolute;
+    left: 40vw;
+    width: 20%;
+}
+
+#michael3 {
+    width: 20%;
+}
+
+#confetti {
+    display: none;
+    position: absolute;
+    left: 15%;
+    width: 20%;
+}
+
+#confetti2 {
+    display: none;
+    position: absolute;
+    left: 65%;
+    bottom: 40%;
+    width: 20%;
+}
+
+@keyframes pulse {
+    0% { 
+        transform: scale(1); 
+    }
+    50% { 
+        transform: scale(1.20); 
+    }
+    100% { 
+        transform: scale(1); 
+    }
+}
+
+#toeter {
+    padding-top: 1.5em;
+    width: 13%;
+    animation: pulse 2s infinite forwards;
+}
+
+@keyframes flash {
+    0%, 100% { 
+        opacity: 1; 
+    }
+    50% { 
+        opacity: 0; 
+    }
+}
+
+#opnieuw {
+    font-size: 0.7em;
+    margin: 0.5em;
+    padding: 1em;
+    font-weight: 700;
+    background-color: red;
+    border-color: red;
+    color: white;
+    animation: flash 1.5s infinite forwards;
+}
+
+@keyframes wave {
+    0%, 100% { 
+        transform: translateY(0); 
+    }
+    50% { 
+        transform: translateY(-35px); 
+    }
+}
+
+#pagina4 p {
+    padding-bottom: 1em;
+    font-size: 70%;
+    font-weight: 550;
+    animation: wave 2s infinite forwards;
+}
+
+#pagina4 img {
+    padding-top: 1.5em;
+    width: 20vw;
+}
